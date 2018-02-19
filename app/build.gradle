@@ -23,4 +23,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    // https://mvnrepository.com/artifact/com.jakewharton/butterknife
+    implementation group: 'com.jakewharton', name: 'butterknife', version: '8.8.1'
+    // https://mvnrepository.com/artifact/com.jakewharton/butterknife-compiler
+    annotationProcessor group: 'com.jakewharton', name: 'butterknife-compiler', version: '8.8.1'
 }

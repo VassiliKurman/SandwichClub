@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.udacity.sandwichclub.model.Sandwich;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String[] sandwiches = getResources().getStringArray(R.array.sandwich_names);
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, sandwiches);
 
